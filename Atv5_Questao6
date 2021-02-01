@@ -1,0 +1,68 @@
+programa{
+
+funcao inicio()
+{
+    //variaveis
+    
+    real a, b, c
+    real menor=0.0, meio=0.0, maior=0.0
+
+
+    escreva("Digite um número:")
+    leia(a)
+    
+    escreva("Digite outro número:")
+    leia(b)
+    
+    escreva("Digite outro número: ")
+    leia(c)
+    
+    limpa()
+    
+        se(a>b e b>c){
+        maior = a
+        meio = b
+        menor = c
+    }
+
+
+         senao se(a>c e c>b){
+         maior = a
+         meio = c
+         menor = b
+    }
+
+
+        senao se(b>a e a>c){
+         maior = b
+         meio = a
+         menor = c
+         }
+
+
+        senao se(b>c e c>a){
+         maior = b
+         meio = c
+         menor = a
+         }
+
+
+          senao se(c>a e a>b){
+         maior = c
+         meio = a
+         menor = b
+         }
+
+     senao se(c>b e b>a){
+         maior = c
+         meio = b
+         menor = a
+         }
+
+       escreva(maior,", ", meio,", ", menor, "\n \n \n \n")
+        
+
+
+		
+	}
+}
